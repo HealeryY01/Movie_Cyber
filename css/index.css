@@ -1,0 +1,162 @@
+/* GLOBAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #717171;
+}
+/* line style */
+.line::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    /*   Giá trị 1- Hướng trải màu:
+         to right:trải qua phải
+         to left: phải qua trái
+         to bottom: từ trên xuống
+         to top: từ trên xuống
+         Phụ thuộc vào hướng trải màu
+         Giá trị thứ 2 là: màu bắt đầu(trái)
+         Giá trị thứ 3 là: màu kết thúc
+    */
+    background: linear-gradient(to right,#fbbd61,#ec7532);
+    display: block;
+    box-shadow: 0 0 20px 0 #fbbd61;
+    transition: all 0.5s;
+}
+.line:hover::after{
+      width: 100%;
+}
+.line.active::after{
+    width: 100%;
+}
+/* HEADER */
+header {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+.header p{
+    font-size: 14px;
+    font-weight: 700;
+}
+#movieNavbar .navbar-nav{
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+#movieNavbar .navbar-nav .nav-link{
+     color: white;
+     letter-spacing: 3px;
+     line-height: 0.8rem;
+     padding: 20px 24px ;
+}
+/* CAROUSEL */
+#carouselMovie .carousel-item .carousel-caption{
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+}
+/* :first-child : thứ tự trước , loại thẻ  */
+/* :first-of-type : loại thẻ trước , thứ tự sau */
+#carouselMovie .carousel-item .carousel-caption p:first-of-type{
+     color: #fbbd61;
+     font-size: 0.875rem;
+     letter-spacing: 2px;
+     margin: 0;
+     animation-delay: 0.5s;
+}
+#carouselMovie .carousel-item .carousel-caption p:last-of-type{
+     font-size: 1.125rem;
+     margin-bottom: 20px;   
+}
+#carouselMovie .carousel-item .carousel-caption h2{
+    font-size: 3.25rem;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+.movieCarousel__trailer{
+    animation-delay: 0.5s;
+}
+.movieCarousel__trailer>span{
+      width: 48px;
+      height: 48px;
+      border: 2px solid white;
+      border-radius: 50%;  
+      font-size: 0.8rem;  
+      display: inline-block; 
+      text-align: center;
+      line-height: 48px;
+      margin-right: 8px;
+}
+.movieCarousel__trailer button{
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    letter-spacing: 4px;
+    background:linear-gradient(to right,#fbbd61,#ec7532);
+    color: white;
+    position: relative;
+    overflow: hidden;
+    outline: none;
+}
+.movieCarousel__trailer button:hover{
+    color: white;
+}
+.movieCarousel__trailer button::before{
+    content: "";
+    width: 110%;
+    height: 100%;
+    background-color: #ec7532;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    display: block;
+    transform: skewX(30deg) translateX(-110%);
+    transition: all 0.5s;
+   z-index: 1;
+}
+.movieCarousel__trailer button:hover::before{
+    transform: skewX(30deg) translateX(-10px);
+}
+.movieCarousel__trailer button span{
+    position: relative;
+    z-index: 2;
+}
+#carouselMovie .carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background:transparent;
+    opacity: 1;
+    box-sizing: border-box;
+    /* background-clip: border-box; */
+}
+#carouselMovie .carousel-indicators{
+    justify-content: flex-start;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+#carouselMovie .carousel-indicators li.active{
+    background-color: white;
+}
+.movieCarousel__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(to top,black,transparent);
+}
