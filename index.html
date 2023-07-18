@@ -79,6 +79,44 @@
         </div>
       </nav>
     </header>
+    <header id="headerFixed">
+      <nav class="navbar container navbar-expand-lg">
+        <a class="navbar-brand" href="#"
+          ><img src="./img/logo.svg" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#movieNavbar"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"> </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="movieNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active line">
+              <a class="nav-link" href="#">HOME</a>
+            </li>
+            <li class="nav-item line">
+              <a class="nav-link" href="#">WHAT'S ON</a>
+            </li>
+            <li class="nav-item line">
+              <a class="nav-link" href="#">SHORTCODES</a>
+            </li>
+            <li class="nav-item line">
+              <a class="nav-link" href="#">NEWS</a>
+            </li>
+            <li class="nav-item line">
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <!-- CAROUSEL -->
     <section class="movieCarousel">
       <!-- data-ride="carousel" -->
@@ -185,7 +223,107 @@
       </div>
     </section>
     <!-- NEWIN -->
-    <section class="newIn"></section>
+    <section class="newIn section">
+      <div class="container">
+        <h2 class="title">New In</h2>
+        <div class="newIn__content">
+          <div class="row">
+            <div class="col-3">
+              <div class="newIn__img">
+                <img class="img-fluid" src="./img/thumb1-270x340.jpg" alt="" />
+                <div class="newIn__overlay"></div>
+                <div class="newIn__play">
+                  <div>
+                    <a href="#"><i class="fa-solid fa-play"></i></a>
+                    <a href="#"> read more</a>
+                    <p class="date">Released: 14 April, 2017</p>
+                  </div>
+                </div>
+              </div>
+              <div class="newIn__title">
+                <h3>The end of days</h3>
+                <div>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="newIn__img">
+                <img class="img-fluid" src="./img/movie-7-270x340.jpg" alt="" />
+                <div class="newIn__overlay"></div>
+                <div class="newIn__play">
+                  <div>
+                    <a href="#"><i class="fa-solid fa-play"></i></a>
+                    <a href="#"> read more</a>
+                    <p class="date">Released: 14 April, 2017</p>
+                  </div>
+                </div>
+              </div>
+              <div class="newIn__title">
+                <h3>Daylight</h3>
+                <div>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="newIn__img">
+                <img class="img-fluid" src="./img/thumb2-270x340.jpg" alt="" />
+                <div class="newIn__overlay"></div>
+                <div class="newIn__play">
+                  <div>
+                    <a href="#"><i class="fa-solid fa-play"></i></a>
+                    <a href="#"> read more</a>
+                    <p class="date">Released: 14 April, 2017</p>
+                  </div>
+                </div>
+              </div>
+              <div class="newIn__title">
+                <h3>Locked in</h3>
+                <div>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="newIn__img">
+                <img class="img-fluid" src="./img/thumb4.jpg" alt="" />
+                <div class="newIn__overlay"></div>
+                <div class="newIn__play">
+                  <div>
+                    <a href="#"><i class="fa-solid fa-play"></i></a>
+                    <a href="#"> read more</a>
+                    <p class="date">Released: 14 April, 2017</p>
+                  </div>
+                </div>
+              </div>
+              <div class="newIn__title">
+                <h3>Sudden death</h3>
+                <div>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- SHOWTIMES -->
     <section class="showTime"></section>
     <!-- COMINGSOON -->
@@ -208,5 +346,20 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
+    <!-- Main JS -->
+    <script>
+      Window.onscroll = function () {
+        if (
+          document.body.scrollTop > 200 ||
+          document.documentElement.scrollTop > 200
+        ) {
+          document.getElementById("#headerFixed").style.transform =
+            "translate(-50%,0)";
+        } else {
+          document.getElementById("#headerFixed").style.transform =
+            "translate(-50%,-100%)";
+        }
+      };
+    </script>
   </body>
 </html>
