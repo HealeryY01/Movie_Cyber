@@ -31,6 +31,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <!-- VENOBOX CSS -->
+    <link rel="stylesheet" href="./css/venobox.min.css.map" />
     <!-- INDEX.CSS -->
     <link rel="stylesheet" href="./css/index.css" />
   </head>
@@ -325,13 +327,471 @@
       </div>
     </section>
     <!-- SHOWTIMES -->
-    <section class="showTime"></section>
+    <section class="showTimes section">
+      <div class="container">
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a
+              class="nav-link line active"
+              id="mon-tab"
+              data-toggle="tab"
+              href="#mon"
+              role="tab"
+              aria-controls="nav-home"
+              aria-selected="true"
+            >
+              <span>MON</span>
+            </a>
+            <a
+              class="nav-link line"
+              id="tue-tab"
+              data-toggle="tab"
+              href="#tue"
+              role="tab"
+              aria-controls="nav-profile"
+              aria-selected="false"
+              ><span>TUE</span>
+            </a>
+            <a
+              class="nav-link line"
+              id="today-tab"
+              data-toggle="tab"
+              href="#today"
+              role="tab"
+              aria-controls="nav-contact"
+              aria-selected="false"
+              ><span>TODAY</span>
+            </a>
+            <a
+              class="nav-link line"
+              id="thu-tab"
+              data-toggle="tab"
+              href="#thu"
+              role="tab"
+              aria-controls="nav-contact"
+              aria-selected="false"
+              ><span>THU</span>
+            </a>
+            <a
+              class="nav-link line"
+              id="fri-tab"
+              data-toggle="tab"
+              href="#fri"
+              role="tab"
+              aria-controls="nav-contact"
+              aria-selected="false"
+              ><span>FRI</span>
+            </a>
+            <a
+              class="nav-link line"
+              id="sat-tab"
+              data-toggle="tab"
+              href="#sat"
+              role="tab"
+              aria-controls="nav-contact"
+              aria-selected="false"
+              ><span>SAT</span>
+            </a>
+            <a
+              class="nav-link line"
+              id="sun-tab"
+              data-toggle="tab"
+              href="#sun"
+              role="tab"
+              aria-controls="nav-contact"
+              aria-selected="false"
+              ><span>SUN</span>
+            </a>
+          </div>
+        </nav>
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="mon"
+            role="tabpanel"
+            aria-labelledby="nav-home-tab"
+          >
+            <div class="row py-5 showTimes__row">
+              <div class="col-2">
+                <img class="img-fluid bo" src="./img/movie-13.jpg" alt="" />
+              </div>
+              <div class="col-10">
+                <p>ACTION, ADVENTURE, COMEDY</p>
+                <h3>The lone soldier: Behind enemy lines</h3>
+                <p>
+                  Claritas est etiam processus dynamicus, qui sequitur
+                  mutationem consuetudium lectorum. Mirum est notare quam
+                  littera gothica, quam nunc putamus parum claram, anteposuerit
+                  litterarum formas humanitatis per seacula quarta decima et
+                  quinta decima.
+                </p>
+                <p>
+                  <a href="#"
+                    >FULL SYNOPSIS<i class="fa-solid fa-angle-right"></i
+                  ></a>
+                </p>
+                <div class="row showTimes__runingTimes">
+                  <div class="col-9 d-flex align-items-center">
+                    <span><i class="fa-solid fa-clock"></i> VIEWING TIMES</span>
+                    <div>
+                      <button class="btn" disabled>10:30</button>
+                      <button class="btn">12:30</button>
+                      <button class="btn">16:30</button>
+                      <button class="btn">19:30</button>
+                    </div>
+                  </div>
+                  <div class="col-3 text-right showTimes__mins">
+                    <span>105 MINS</span>
+                    <span>15</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row py-5 showTimes__row">
+              <div class="col-2">
+                <img
+                  class="img-fluid bo"
+                  src="./img/movie-7-270x340.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-10">
+                <p>ACTION, ADVENTURE, COMEDY</p>
+                <h3>Daylight</h3>
+                <p>
+                  Claritas est etiam processus dynamicus, qui sequitur
+                  mutationem consuetudium lectorum. Mirum est notare quam
+                  littera gothica, quam nunc putamus parum claram, anteposuerit
+                  litterarum formas humanitatis per seacula quarta decima et
+                  quinta decima.
+                </p>
+                <p>
+                  <a href="#"
+                    >FULL SYNOPSIS<i class="fa-solid fa-angle-right"></i
+                  ></a>
+                </p>
+                <div class="row showTimes__runingTimes">
+                  <div class="col-9 d-flex align-items-center">
+                    <span><i class="fa-solid fa-clock"></i> VIEWING TIMES</span>
+                    <div>
+                      <button class="btn" disabled>19:30</button>
+                      <button class="btn">20:30</button>
+                      <button class="btn">22:30</button>
+                      <button class="btn" disabled>24:00</button>
+                    </div>
+                  </div>
+                  <div class="col-3 text-right showTimes__mins">
+                    <span>90 MINS</span>
+                    <span>15</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row py-5 showTimes__row">
+              <div class="col-2">
+                <img
+                  class="img-fluid bo"
+                  src="./img/thumb1-270x340.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-10">
+                <p>ACTION, ADVENTURE, COMEDY</p>
+                <h3>The end of days</h3>
+                <p>
+                  Claritas est etiam processus dynamicus, qui sequitur
+                  mutationem consuetudium lectorum. Mirum est notare quam
+                  littera gothica, quam nunc putamus parum claram, anteposuerit
+                  litterarum formas humanitatis per seacula quarta decima et
+                  quinta decima.
+                </p>
+                <p>
+                  <a href="#"
+                    >FULL SYNOPSIS<i class="fa-solid fa-angle-right"></i
+                  ></a>
+                </p>
+                <div class="row showTimes__runingTimes">
+                  <div class="col-9 d-flex align-items-center">
+                    <span><i class="fa-solid fa-clock"></i> VIEWING TIMES</span>
+                    <div>
+                      <button class="btn" disabled>7:30</button>
+                      <button class="btn">10:30</button>
+                      <button class="btn">15:00</button>
+                      <button class="btn">19:00</button>
+                    </div>
+                  </div>
+                  <div class="col-3 text-right showTimes__mins">
+                    <span>120 MINS</span>
+                    <span>15</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="tue"
+            role="tabpanel"
+            aria-labelledby="nav-profile-tab"
+          >
+            <div class="row py-5 showTimes__row">
+              <div class="col-2">
+                <img
+                  class="img-fluid bo"
+                  src="./img/thumb1-270x340.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-10">
+                <p>ACTION, ADVENTURE, COMEDY</p>
+                <h3>The end of days</h3>
+                <p>
+                  Claritas est etiam processus dynamicus, qui sequitur
+                  mutationem consuetudium lectorum. Mirum est notare quam
+                  littera gothica, quam nunc putamus parum claram, anteposuerit
+                  litterarum formas humanitatis per seacula quarta decima et
+                  quinta decima.
+                </p>
+                <p>
+                  <a href="#"
+                    >FULL SYNOPSIS<i class="fa-solid fa-angle-right"></i
+                  ></a>
+                </p>
+                <div class="row showTimes__runingTimes">
+                  <div class="col-9 d-flex align-items-center">
+                    <span><i class="fa-solid fa-clock"></i> VIEWING TIMES</span>
+                    <div>
+                      <button class="btn" disabled>7:30</button>
+                      <button class="btn">10:30</button>
+                      <button class="btn">15:00</button>
+                      <button class="btn">19:00</button>
+                    </div>
+                  </div>
+                  <div class="col-3 text-right showTimes__mins">
+                    <span>120 MINS</span>
+                    <span>15</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="today"
+            role="tabpanel"
+            aria-labelledby="nav-contact-tab"
+          >
+            <div class="row py-5 showTimes__row">
+              <div class="col-2">
+                <img
+                  class="img-fluid bo"
+                  src="./img/movie-7-270x340.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-10">
+                <p>ACTION, ADVENTURE, COMEDY</p>
+                <h3>Daylight</h3>
+                <p>
+                  Claritas est etiam processus dynamicus, qui sequitur
+                  mutationem consuetudium lectorum. Mirum est notare quam
+                  littera gothica, quam nunc putamus parum claram, anteposuerit
+                  litterarum formas humanitatis per seacula quarta decima et
+                  quinta decima.
+                </p>
+                <p>
+                  <a href="#"
+                    >FULL SYNOPSIS<i class="fa-solid fa-angle-right"></i
+                  ></a>
+                </p>
+                <div class="row showTimes__runingTimes">
+                  <div class="col-9 d-flex align-items-center">
+                    <span><i class="fa-solid fa-clock"></i> VIEWING TIMES</span>
+                    <div>
+                      <button class="btn">19:30</button>
+                      <button class="btn">20:30</button>
+                      <button class="btn">22:30</button>
+                      <button class="btn">24:00</button>
+                    </div>
+                  </div>
+                  <div class="col-3 text-right showTimes__mins">
+                    <span>90 MINS</span>
+                    <span>15</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row py-5 showTimes__row">
+              <div class="col-2">
+                <img
+                  class="img-fluid bo"
+                  src="./img/thumb1-270x340.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-10">
+                <p>ACTION, ADVENTURE, COMEDY</p>
+                <h3>The end of days</h3>
+                <p>
+                  Claritas est etiam processus dynamicus, qui sequitur
+                  mutationem consuetudium lectorum. Mirum est notare quam
+                  littera gothica, quam nunc putamus parum claram, anteposuerit
+                  litterarum formas humanitatis per seacula quarta decima et
+                  quinta decima.
+                </p>
+                <p>
+                  <a href="#"
+                    >FULL SYNOPSIS<i class="fa-solid fa-angle-right"></i
+                  ></a>
+                </p>
+                <div class="row showTimes__runingTimes">
+                  <div class="col-9 d-flex align-items-center">
+                    <span><i class="fa-solid fa-clock"></i> VIEWING TIMES</span>
+                    <div>
+                      <button class="btn">7:30</button>
+                      <button class="btn">10:30</button>
+                      <button class="btn">15:00</button>
+                      <button class="btn">19:00</button>
+                    </div>
+                  </div>
+                  <div class="col-3 text-right showTimes__mins">
+                    <span>120 MINS</span>
+                    <span>15</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="thu"
+            role="tabpanel"
+            aria-labelledby="nav-contact-tab"
+          >
+            thu
+          </div>
+          <div
+            class="tab-pane fade"
+            id="fri"
+            role="tabpanel"
+            aria-labelledby="nav-contact-tab"
+          >
+            fri
+          </div>
+          <div
+            class="tab-pane fade"
+            id="sat"
+            role="tabpanel"
+            aria-labelledby="nav-contact-tab"
+          >
+            sat
+          </div>
+          <div
+            class="tab-pane fade"
+            id="sun"
+            role="tabpanel"
+            aria-labelledby="nav-contact-tab"
+          >
+            sun
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- COMINGSOON -->
-    <section class="comingSoon"></section>
+    <section class="comingSoon section">
+      <div class="container">
+        <h2 class="title title--white">COMMING SOON</h2>
+        <div class="row align-items-center">
+          <div class="col-6">
+            <p class="comingSoon__type">FANTASY, SCI-FI, ACTION</p>
+            <h3>Colliding planets</h3>
+            <div class="comingSoon__rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span
+                ><i class="fa-solid fa-calendar-days mx-3"></i> 2 October,
+                2019</span
+              >
+            </div>
+            <p>
+              Claritas est etiam processus dynamicus, qui sequitur mutationem
+              consuetudium lectorum. Mirum est notare quam littera gothica, quam
+              nunc putamus parum claram, anteposuerit litterarum formas
+              humanitatis per seacula quarta decima et quinta decima.
+            </p>
+            <a href="#">MORE INFO <i class="fa-solid fa-angle-right"></i></a>
+          </div>
+          <div class="col-6">
+            <a
+              class="my-video-links"
+              data-vbtype="video"
+              href="https://youtu.be/d96cjJhvlMA"
+              ><div class="comingSoon_video">
+                <img
+                  class="img-fluid"
+                  src="./img/trailer-1-555x335.png"
+                  alt=""
+                />
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- MOVIELIST -->
-    <section class="movieList"></section>
+    <section class="movieList section">
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <div class="movieList__item">
+              <img class="img-fluid" src="./img/movie-10.jpg" alt="" />
+              <div class="movieList__overlay"></div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="movieList__item">
+              <img class="img-fluid" src="./img/movie-12.jpg" alt="" />
+              <div class="movieList__overlay"></div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="movieList__item">
+              <img class="img-fluid" src="./img/movie-13.jpg" alt="" />
+              <div class="movieList__overlay"></div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="movieList__item">
+              <img class="img-fluid" src="./img/movie-14.jpg" alt="" />
+              <div class="movieList__overlay"></div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="movieList__item">
+              <img class="img-fluid" src="./img/movie-15.jpg" alt="" />
+              <div class="movieList__overlay"></div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="movieList__item">
+              <img class="img-fluid" src="./img/movie-16.jpg" alt="" />
+              <div class="movieList__overlay"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- CONTACT -->
-    <section class="contact"></section>
+    <section class="contact section">
+      <div class="contact__content">
+        <p>Need help? Contact our support team on</p>
+        <p><a href="tel:0365680157">036 568 0157</a></p>
+      </div>
+    </section>
     <!-- FOOTER -->
     <footer></footer>
     <!-- thư viện hỗ trợ -->
@@ -346,17 +806,24 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
+    <!-- VENOBOX JS -->
+    <script src="./js/venobox.min.js.map"></script>
+    <script>
+      new VenoBox({
+        selector: ".my-video-links",
+      });
+    </script>
     <!-- Main JS -->
     <script>
-      Window.onscroll = function () {
+      window.onscroll = function () {
         if (
           document.body.scrollTop > 200 ||
           document.documentElement.scrollTop > 200
         ) {
-          document.getElementById("#headerFixed").style.transform =
+          document.getElementById("headerFixed").style.transform =
             "translate(-50%,0)";
         } else {
-          document.getElementById("#headerFixed").style.transform =
+          document.getElementById("headerFixed").style.transform =
             "translate(-50%,-100%)";
         }
       };

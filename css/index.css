@@ -8,6 +8,10 @@ html,body{
     font-family: 'Roboto Condensed', sans-serif;
     color: #717171;
 }
+::selection{
+    background-color: #ec7532;
+    color: white;
+}
 /* line style */
 .line::after{
     content: "";
@@ -53,6 +57,10 @@ html,body{
     display: block;
     margin-top: 20px;
 }
+.title--white{
+    color: white;
+    border-bottom:1px solid #ffffff48;
+}
 /* HEADER */
 header {
     position: absolute;
@@ -81,6 +89,7 @@ header {
     width: 100%;
     transform: translate(-50%,-100%);
     transition: transform 0.5s;
+    z-index: 16;
 }
 /* CAROUSEL */
 #carouselMovie .carousel-item .carousel-caption{
@@ -259,4 +268,174 @@ header {
 }
 .newIn__play p{
     color: white;
+}
+/* SHOWTIMES */
+.nav-tabs .nav-item.show .nav-link, .showTimes .nav-tabs .nav-link.active {
+    border: none;
+}
+.showTimes  .nav-tabs .nav-link.active{
+    color: #ec7532;
+}
+.showTimess .nav-tabs .nav-link {
+    border: none;
+    padding: 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #4a4a4a;
+
+}
+.showTimes .nav-tabs .nav-item{
+    margin-bottom: 0;
+}
+.showTimes .nav-tabs .nav-link span{
+    padding: 15px 30px;
+    display: block;
+}
+.showTimes__row {
+    border-bottom: 1px solid #d8d8d8;
+}
+#myTabContent .tab-pane .showTimes__row:last-child {
+    border-bottom: none;
+}
+.showTimes__row img{
+    border-radius: 10px;
+}
+.showTimes__row div p:first-of-type{
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #ec7532;
+    margin-bottom: 0;
+}
+.showTimes__row div h3{
+    font-size: 24px;
+    font-weight: 300;
+    color: #101010;
+    letter-spacing: 1px;
+}
+.showTimes__row a {
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #ec7532;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.showTimes__row a:hover{
+    color: #101010;
+}
+.showTimes__runingTimes{
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    color: #4a4a4a;
+}
+.showTimes__runingTimes button{
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #717171;
+    background-color: #d8d8d8;
+}
+.showTimes__mins span:last-child{
+     width: 33px;
+     height: 33px;
+     display: inline-block;
+     line-height: 33px;
+     text-align: center;
+     color: white;
+     background-color: #4a4a4a;
+     border-radius: 50%;
+     font-weight: 700;
+}
+#today .showTimes__runingTimes button{
+    background-color: #ec7532;
+    color: white;
+}
+/* COMINGSOON */
+.comingSoon {
+    background:#101010 url(../img/hero-single-movie.jpg);
+    background-size: cover;
+    color: white;
+}
+.comingSoon__type {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #ec7532;
+}
+.comingSoon__type h3{
+    font-size: 34px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+.comingSoon__rating>i {
+    color:#fbbd61;
+    
+}
+.comingSoon p{
+    margin: 1rem 0; 
+}
+.comingSoon a{
+    color: #ec7532;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 4px;
+    transition: all 0.5s;
+}
+.comingSoon a:hover{
+    color: white;
+}
+.comingSoon_video{
+    position: relative;
+}
+.comingSoon_video i{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%) scale(1);
+     border: 1px solid #ec7532;
+     border-radius: 50%;
+     width: 80px;
+     height: 80px;
+     text-align: center;
+     line-height: 80px;
+     transition: all 0.5s;
+     color: white;
+     font-size: 25px;
+}
+.comingSoon_video:hover i{
+    transform:translate(-50%,-50%) scale(0.9);
+}
+/* MOVIELIST */
+.movieList{
+    background-color: #101010;
+}
+.movieList__item{
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.movieList__overlay{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: #101010;
+    opacity: 0.6;
+    transition: all 0.5s;
+}
+.movieList__item:hover .movieList__overlay{
+    opacity: 0;
+}
+/* CONTACT */
+.contact__content{
+    text-align: center;
+}
+.contact__content p:first-child{
+    font-size: 23px;
+    color: #4a4a4a;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+.contact__content a{
+    font-size: 46px;
+    color: #fbbd61;
+    text-decoration: none;
 }
